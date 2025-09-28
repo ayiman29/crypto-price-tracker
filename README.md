@@ -94,13 +94,4 @@ fetch("https://api.coingecko.com/api/v3/simple/price?ids=doge&vs_currencies=usd"
 
 ---
 
-## License
-
-MIT License © 2025 [ayiman29](https://github.com/ayiman29)
-
----
-
-## Acknowledgements
-
-* [CoinGecko API](https://www.coingecko.com/en/api) for free cryptocurrency price data.
-* Inspired by simple cryptocurrency dashboards.
+Happy coding or whatever they say <3
