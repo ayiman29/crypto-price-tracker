@@ -4,6 +4,7 @@ import Bitcoin from './components/Bitcoin';
 import Ethereum from './components/Ethereum';
 import Doge from './components/Doge'
 import Navbar from './components/Navbar'
+import Footer from './components/Footer';
 
 function App() {
   const [flag, setFlag] = useState("LOADING")
@@ -55,6 +56,7 @@ function App() {
         >
           DOGE
         </button>
+        <Footer />
 
       </div>
     </>
