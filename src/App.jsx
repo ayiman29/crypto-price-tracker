@@ -1,28 +1,60 @@
 import { useState, useEffect } from 'react';
 import './App.css';
+import Bitcoin from './components/Bitcoin';
+import Ethereum from './components/Ethereum';
+import Doge from './components/Doge'
 
 function App() {
-  const [price, setPrice] = useState(0);
-  const [time, setTime] = useState(new Date());
+  const [flag, setFlag] = useState("LOADING")
+  function bitcoinSelector() {
+    setFlag("B")
 
-  useEffect(() => {
-    const fetchPrice = () => {
-      fetch('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd')
-        .then(res => res.json())
-        .then(data => setPrice(data.bitcoin.usd))
-        .then(() => setTime(new Date()))
-        .catch(err => console.error('Error fetching price:', err));
-    };
-    fetchPrice();
-    const interval = setInterval(fetchPrice, 300000); 
-    return () => clearInterval(interval);
+  }
+  function ethereumSelector() {
+    setFlag("E")
 
-  }, []);
+  }
+  function dogeSelector() {
+    setFlag("D")
 
+  }
   return (
     <>
-      <h1>Bitcoin Price: ${price}</h1>
-      <p>Last updated: {time.toLocaleString()}</p>
+      <div>
+        <div style={{ display: flag === "B" ? "block" : "none" }}>
+          <Bitcoin />
+        </div>
+        <div style={{ display: flag === "E" ? "block" : "none" }}>
+          <Ethereum />
+        </div>
+        <div style={{ display: flag === "D" ? "block" : "none" }}>
+          <Doge />
+        </div>
+      </div>
+
+      <div className = "selectors">
+        <button
+          onClick={bitcoinSelector}
+          className={flag === "B" ? "active" : ""}
+        >
+          Bitcoin
+        </button>
+
+        <button
+          onClick={ethereumSelector}
+          className={flag === "E" ? "active" : ""}
+        >
+          Ethereum
+        </button>
+
+        <button
+          onClick={dogeSelector}
+          className={flag === "D" ? "active" : ""}
+        >
+          DOGE
+        </button>
+
+      </div>
     </>
   );
 }
