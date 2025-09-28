@@ -1,45 +1,10 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
 
 .selectors button{
   margin: 5px;
@@ -52,29 +17,32 @@
 }
 
 .price-box-bitcoin {
-  border: 3px solid #8fa1ff;
+  border: 3px solid #ffffff;
   padding: 100px 5px;
   margin: 10px;
   border-radius: 20px;
   background-color: rgb(34, 34, 34);
+  background: linear-gradient(135deg, #0c0601, #382a02);
   min-width: 300px;
 }
 
 .price-box-ethereum {
-  border: 3px solid #8fa1ff;
+  border: 3px solid #ffffff;
   padding: 100px 5px;
   margin: 10px;
   border-radius: 20px;
   background-color: rgb(34, 34, 34);
+  background: linear-gradient(135deg, #010e1a, #022444);
   min-width: 300px;
 }
 
 .price-box-doge {
-  border: 3px solid #8fa1ff;
+  border: 3px solid #ffffff;
   padding: 100px 5px;
   margin: 10px;
   border-radius: 20px;
   background-color: rgb(34, 34, 34);
+  background: linear-gradient(135deg, #1a1a01, #404402);
   min-width: 300px;
 }
 
@@ -86,7 +54,7 @@
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1.5px;
-  color: #8fa1ff;
+  color: #ffffff;
 }
 
 
@@ -98,4 +66,57 @@
   opacity: 0.75;
   margin-top: 6px;
   font-style: italic;
+}
+
+.nav {
+  font-family: 'Contrail One', cursive;
+  display: flex;
+  align-items: center; 
+  justify-content: space-between;         
+  position: fixed;         
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0;
+  background-color: rgb(0, 0, 0);  
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  z-index: 1000;        
+  margin: 0; 
+  border-bottom: white 2px solid;
+  height: 80px;
+}
+
+.nav h2 {
+  margin: 0; 
+  font-size: 40px;
+  padding: 10px;
+}
+
+.image {
+  width: 32px;
+  height: 32px
+}
+
+.images {
+  display: flex;     
+  gap: 0.5rem;       
+  padding: 10px;
+  align-items: center;  
+}
+
+.images h6 {
+  margin: 0;            
+  font-size: 0.9rem;    
+  color: #ffffff;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;    
+}
+
+.logo-image {
+  width: 50px;    
+  height: 50px;
+  padding-left: 10px;
 }

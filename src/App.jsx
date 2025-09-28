@@ -3,6 +3,7 @@ import './App.css';
 import Bitcoin from './components/Bitcoin';
 import Ethereum from './components/Ethereum';
 import Doge from './components/Doge'
+import Navbar from './components/Navbar'
 
 function App() {
   const [flag, setFlag] = useState("LOADING")
@@ -20,6 +21,7 @@ function App() {
   }
   return (
     <>
+      <Navbar />
       <div>
         <div style={{ display: flag === "B" ? "block" : "none" }}>
           <Bitcoin />

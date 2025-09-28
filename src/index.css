@@ -5,8 +5,8 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #04071d;
-  background: linear-gradient(135deg, #04071d, #011281);
+  background-color: #111111;
+  background: linear-gradient(135deg, #111111, #161515);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -48,7 +48,7 @@ button {
   transition: border-color 0.25s;
 }
 button:hover {
-  box-shadow: 0 2px 4px #8fa1ff inset;
+  box-shadow: 0 2px 4px #ffffff inset;
 }
 
 
@@ -70,3 +70,4 @@ button:active {
     background-color: #f9f9f9;
   }
 }
+
