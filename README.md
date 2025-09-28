@@ -21,16 +21,6 @@ Check out the deployed app here: [Crypto Price Tracker](https://crypto-price-tra
 
 ---
 
-## Technologies Used
-
-- **React** – Frontend library for building user interfaces.
-- **JavaScript (ES6+)** – Logic and state management.
-- **CSS** – Styling of components.
-- **CoinGecko API** – Provides real-time cryptocurrency prices.
-- **Netlify / Vercel / GitHub Pages** – For deployment of static site.
-
----
-
 ## Components
 
 - **Navbar.jsx** – Displays the app title and available currency icons.
