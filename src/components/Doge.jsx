@@ -7,10 +7,10 @@ export default function Doge() {
   useEffect(() => {
     const fetchPrice = () => {
       fetch(
-        "https://api.coingecko.com/api/v3/simple/price?ids=doge&vs_currencies=usd"
+        "https://api.coingecko.com/api/v3/simple/price?ids=dogecoin&vs_currencies=usd"
       )
         .then((res) => res.json())
-        .then((data) => setPrice(data.doge.usd))
+        .then((data) => setPrice(data.dogecoin.usd))
         .then(() => setTime(new Date()))
         .catch((err) => console.error("Error fetching price:", err));
     };
